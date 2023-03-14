@@ -1,11 +1,7 @@
 import * as actions from '../Actions/authAction';
 
 export const intialState = {
-  isDevelopment: true,
-  isAuthenticated: false,
-  versionNumber: '',
-  user: {},
-  first_name: '',
+data:[]
 
 };
 
@@ -14,9 +10,7 @@ export default function authReducer(state = intialState, action) {
     case actions.SET_CURRENT_USER:
       return {
         ...state,
-        user: action.user,
-        first_name: action.user?.first_name,
-        last_name: action.user?.last_name,
+        data: action.data,
       };
     default:
       return state;
