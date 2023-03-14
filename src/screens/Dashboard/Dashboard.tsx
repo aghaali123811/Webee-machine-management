@@ -1,16 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import {
   View,
-  FlatList,
   Text,
-  ImageBackground,
   ScrollView,
-  ActivityIndicator,
-  TouchableOpacity,
-  Image,
 } from 'react-native';
 import Colors from '../../common/colors/Colors';
-import ImagePath from '../../common/images/ImagePath';
 import CustomButton from '../../components/Buttons/CustomButton';
 import SimpleHeader from '../../components/Headers/SimpleHeader';
 import styles from './styles';
