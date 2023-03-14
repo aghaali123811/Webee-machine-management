@@ -106,7 +106,7 @@ export default function ManageCategories(props: NavigationProps) {
                     renderItem={({ item, index }) => (
                         <NewCategoryList
                         item={item}
-                        onChangeCategoryName={(e:any,item:any)=>onChangeCategoryName(e,id)}
+                        onChangeCategoryName={(e:any,item:any)=>onChangeCategoryName(e,item)}
                         deleteField={(id:any)=>deleteField(id,item.id,index)}
                         createNewFields={(e:any) => { createNewFields(e) }} 
                         addNewField={(a:any,b:any) => { addNewField(a,b) }}
