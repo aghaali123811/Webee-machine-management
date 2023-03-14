@@ -7,11 +7,9 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 
 //Local imports
-// import Home from '../screens/home/Home';
 import DetailPage from '../screens/DetailScreen/DetailPage';
 import Dashboard from '../screens/Dashboard/Dashboard';
 import ManageCategories from '../screens/ManageCategories/ManageCategories';
-// import Home from '../screens/Dashboard/Dashboard';
 
 const Stack = createNativeStackNavigator();
 const Drawer = createDrawerNavigator();
@@ -31,55 +29,14 @@ function Navigation() {
 
 function Drawers () {
 
-      // const CustomDrawerContent = (props) => (
-      //     <View style={styles.drawerContainer}>
-      //         {/* <StatusBar hidden /> */}
-      //         {/* <StatusBar barStyle="light-content" backgroundColor="#fff" /> */}
-      //         <AntDesign
-      //             name="close"
-      //             size={24}
-      //             style={styles.close}
-      //             onPress={() => props.navigation.toggleDrawer()} />
+      const CustomDrawerContent = (props) => (
+          <View style={{}}>
 
-      //         <Image
-      //             source={require('./assets/logo.png')}
-      //             style={styles.logo} />
-
-      //         <View style={styles.divider} />
-
-      //         <TouchableOpacity style={styles.btn} >
-      //             <Text style={styles.btnTxt}>About Law Zebras</Text>
-      //         </TouchableOpacity>
-
-      //         <TouchableOpacity style={styles.btn} >
-      //             <Text style={styles.btnTxt}>Settings</Text>
-      //         </TouchableOpacity>
-
-      //         <TouchableOpacity style={styles.btn}>
-      //             <Text style={styles.btnTxt}>Privacy Policy</Text>
-      //         </TouchableOpacity>
-
-      //         <TouchableOpacity style={styles.btn}>
-      //             <Text style={styles.btnTxt}>Terms & Conditions</Text>
-      //         </TouchableOpacity>
-
-      //         <TouchableOpacity style={styles.btn}>
-      //             <Text style={styles.btnTxt}>Disclaimers</Text>
-      //         </TouchableOpacity>
-
-      //         <TouchableOpacity style={styles.btn}>
-      //             <Text style={styles.btnTxt}>Saved</Text>
-      //         </TouchableOpacity>
-
-      //         <TouchableOpacity>
-      //             <Text style={styles.logout}>Logout</Text>
-      //         </TouchableOpacity>
-      //     </View>
-      // );
+          </View>
+      );
       return (
           <Drawer.Navigator 
-          //  drawerContent={props => <CustomDrawerContent {...props} />}
-              // overlayColor={Colors.transparent}
+           drawerContent={props => <CustomDrawerContent {...props} />}
               drawerContentOptions={{
                   activeTintColor: '#e91e63',
                   itemStyle: { marginVertical: 30 },
